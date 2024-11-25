@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>신나는 개발자</title>
+</head>
+<body>
+<div layout:fragment="content" class="container my-3">
+    <h1 class="text-center display-6 mt-5">포트폴리오</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <img th:src="@{/img/pp1.png}" alt="포트폴리오">
+        </div>
+        <div class="col-sm-8">
+            <h2>1. 한국문화상자</h2>
+            <ul>
+                <li>반응형 리뉴얼 홈페이지(PC + mobile)</li>
+                <li>원본 : 한국문화상자(https://www.nfm.go.kr/k-box/)</li>
+                <li>벤치마킹 : 엘르(https://www.elle.co.kr/)</li>
+                <li>Skill : HTML5 + CSS3 + jQuery</li>
+                <li>통합개발환경(IDE) : Visual Studio code</li>
+                <li>개발기간 : 약 2주</li>
+            </ul>
+            <button type="button" onclick="location.href='https://doong98.github.io/koreanCulture/'">바로가기</button>
+            <a th:href="@{/pdf/culture.pdf}" download>기획서 다운로드</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <img th:src="@{/img/pp2.png}" alt="포트폴리오">
+        </div>
+        <div class="col-sm-8">
+            <h2>2. 국립정동극장</h2>
+            <ul>
+                <li>반응형 리뉴얼 홈페이지(PC + mobile)</li>
+                <li>원본 : 국립정동극장(https://www.jeongdong.or.kr/portal/main/main.do)</li>
+                <li>벤치마킹 : 탭코리아(https://tapkorea.kr/)</li>
+                <li>Skill : HTML5 + CSS3 + jQuery</li>
+                <li>통합개발환경(IDE) : Visual Studio code</li>
+                <li>개발기간 : 약 2주</li>
+            </ul>
+            <button type="button" onclick="location.href='https://doong98.github.io/jungdong/'">바로가기</button>
+            <a th:href="@{/pdf/jungdong.pdf}" download>기획서 다운로드</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <img th:src="@{/img/pp3.jpg}" alt="포트폴리오">
+        </div>
+        <div class="col-sm-8">
+            <h2>3. 마니사도서</h2>
+            <ul>
+                <li>Back-End 홈페이지(PC 버전)</li>
+                <li>벤치마킹 : 동아출판(https://www.bookdonga.com/main.donga)</li>
+                <li>Skill : JSP + MySQL + Servlet</li>
+                <li>통합개발환경(IDE) : Eclipse</li>
+                <li>기능 : 회원가입, 로그인, 게시판, 장바구니, 도서등록</li>
+                <li>개발기간 : 약 3주</li>
+            </ul>
+            <button type="button" onclick="location.href='#'">바로가기</button>
+            <a th:href="@{/pdf/book.pdf}" download>기획서 다운로드</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <img th:src="@{/img/pp4.jpg}" alt="포트폴리오">
+        </div>
+        <div class="col-sm-8">
+            <h2>4. 의류 쇼핑몰</h2>
+            <ul>
+                <li>Back-End 홈페이지(PC + mobile)</li>
+                <li>Crawling(크롤링) : 동아출판(https://www.bookdonga.com/main.donga)</li>
+                <li>Skill : Spring boot 3 + MySQL + thymeleaf</li>
+                <li>통합개발환경(IDE) : IntelliJ Community 버전</li>
+                <li>기능 : 회원가입, 로그인, 게시판, 장바구니, 상품등록</li>
+                <li>개발기간 : 약 3주</li>
+            </ul>
+            <button type="button" onclick="location.href='#'">바로가기</button>
+            <a th:href="@{/pdf/book.pdf}" download>기획서 다운로드</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

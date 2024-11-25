@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>신나는 개발자</title>
+</head>
+<body>
+<div layout:fragment="content" class="container my-3">
+    <div class="container profile">
+        <h1 class="text-center display-6 mt-5">프로필</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <img th:src="@{/img/me.png}" alt="me">
+            </div>
+            <div class="col-sm-8">
+                <h2>Name : Miyeon Kim</h2>
+                <h2>교육과정</h2>
+                <ul>
+                    <li>과정명 : (디지털 컨버전스)JAVA, Spring 기반 데이터 융합 웹 개발자 과정 A</li>
+                    <li>교육 기간 : 2024.06.24 ~ 2024.12.10</li>
+                    <li>교육 내용 : HTML5, CSS3, Javascript, Jquery, Java, MySQL, Jsp, Spring boot3</li>
+                </ul>
+                <div class="skill">
+                    <h1>My Skill</h1>
+                    <div class="bar learning" data-skill="HTML5+CSS3"></div>
+                    <div class="bar back basic" data-skill="jQuery"></div>
+                    <div class="bar back intermediate" data-skill="JAVA"></div>
+                    <div class="bar front advanced" data-skill="MySQL"></div>
+                    <div class="bar front expert" data-skill="JSP"></div>
+                    <div class="bar front expert" data-skill="SPRING BOOT 3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
